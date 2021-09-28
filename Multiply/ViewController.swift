@@ -14,6 +14,9 @@ class ViewController: UIViewController
     @IBOutlet weak var textField1: UITextField!
     
     @IBOutlet weak var textField2: UITextField!
+    
+    @IBOutlet weak var myLable: UILabel!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -26,8 +29,12 @@ class ViewController: UIViewController
     {
         var x = textField1.text ?? "0"
         var y = textField2.text ?? "0"
-        var intgerNumber1 = Int(x) ?? 0
-        var integerNumber2 = Int(y) ?? 0
+        var intgerNumber1 = Float(x) ?? 0
+        var integerNumber2 = Float(y) ?? 0
+        var product = intgerNumber1 * integerNumber2
+        textField1.resignFirstResponder()
+        textField2.resignFirstResponder()
+        myLable.text = "\(product)"
     }
     
 }
