@@ -16,7 +16,8 @@ class ViewController: UIViewController
     @IBOutlet weak var textField2: UITextField!
     
     @IBOutlet weak var myLable: UILabel!
-    @IBOutlet weak var imageOne: UIImageView!
+
+    @IBOutlet weak var image64: UIImageView!
     
     
     override func viewDidLoad()
@@ -37,9 +38,9 @@ class ViewController: UIViewController
         textField1.resignFirstResponder()
         textField2.resignFirstResponder()
         myLable.text = "\(product)"
-        if product == 64
+        if product == 64.0
         {
-             imageOne.image = UIImage(named: "mario kart")
+             image64.image = UIImage(named: "mariokart")
 
         }
     }

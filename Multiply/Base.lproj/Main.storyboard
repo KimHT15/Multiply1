@@ -84,7 +84,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="imageOne" destination="JFF-F2-Ggk" id="f1z-Ka-J7W"/>
+                        <outlet property="image64" destination="JFF-F2-Ggk" id="tWZ-sc-UNU"/>
                         <outlet property="multiplyLable" destination="zm2-ln-xQj" id="uaD-6P-gZu"/>
                         <outlet property="myLable" destination="zm2-ln-xQj" id="mIM-Fn-9Iq"/>
                         <outlet property="textField1" destination="DJj-sp-2aN" id="yPn-xy-syh"/>
