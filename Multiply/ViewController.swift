@@ -19,30 +19,48 @@ class ViewController: UIViewController
 
     @IBOutlet weak var image64: UIImageView!
     
+    @IBOutlet weak var funnyImage: UIImageView!
+    
+    @IBOutlet weak var sliderOne: UISlider!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
-    @IBOutlet weak var multiplyLable: UILabel!
-    
+
 //Action
     @IBAction func calculate(_ sender: Any)
     {
         var x = textField1.text ?? "0"
         var y = textField2.text ?? "0"
-        var intgerNumber1 = Float(x) ?? 0
-        var integerNumber2 = Float(y) ?? 0
+        var intgerNumber1 = Int(x) ?? 0
+        var integerNumber2 = Int(y) ?? 0
         var product = intgerNumber1 * integerNumber2
         textField1.resignFirstResponder()
         textField2.resignFirstResponder()
+        var even = product % 2
+
         myLable.text = "\(product)"
-        if product == 64.0
+        
+        
+        if product == 64
+
         {
              image64.image = UIImage(named: "mariokart")
 
         }
+        
+        if even == 0
+        {
+        funnyImage.image = UIImage (named: "funny1")
+       }
+        else
+        {
+        funnyImage.image = UIImage(named: "funny2")
+        }
+        
     }
     
 }
